@@ -7,17 +7,31 @@ import { Title } from '../../components/Title/Title';
 import { Card } from '../../components/Card/Card';
 import { Input } from '../../components/Input/Input';
 import { PaginationC } from '../../components/Pagination/Pagination';
+import { Button } from '../../components/Button/Button';
 
 // css import
 import './plantList.css';
 
 export const PlantList = ({}) => {
   return (
-    <div>
+    <div className="plantList">
       {/* 제목 */}
-      <Title type={2} label="반려식물"></Title>
-      {/* 카테고리 필터 */}
-      <Title type={3} label="카테고리 필터"></Title>
+      <Title className="plantTitle" type={2} label="반려식물"></Title>
+      <div className="plantCategory">
+        {/* 카테고리 필터 */}
+        <Title
+          className="categoryFilter"
+          type={3}
+          label="카테고리 필터"
+        ></Title>
+        <Button option={1} label="관역식물" width={100}></Button>
+        <Button option={2} label="허브류" width={90}></Button>
+        <Button option={2} label="공기정확식물" width={120}></Button>
+        <Button option={2} label="다육식물" width={100}></Button>
+        <Button option={2} label="야생화" width={90}></Button>
+        <Button option={2} label="기타" width={80}></Button>
+      </div>
+
       {/* 상품 리스트 */}
       <div className="cardContainer">
         <Card
@@ -169,36 +183,5 @@ export const PlantList = ({}) => {
         </div>
       </div>
     </div>
-
-    // <form>
-    //   <fieldset className="fieldset_login_form">
-    //     <legend className="a11y-hidden">로그인</legend>
-    //     <Input
-    //       type="text"
-    //       id="idInput"
-    //       option={true}
-    //       label="아이디"
-    //       width={372}
-    //       height={40}
-    //       islabel={false}
-    //     />
-    //     <Input
-    //       type="password"
-    //       id="passwordInput"
-    //       label="비밀번호"
-    //       placeholder="비밀번호를 입력하세요"
-    //       width={372}
-    //       height={40}
-    //       islabel={false}
-    //     />
-    //     <div className="link_container">
-    //       <Link to="/findId" label="아이디찾기" />
-    //       <span className="divider">/</span>
-    //       <Link to="/findPw" label="비밀번호찾기" />
-    //     </div>
-    //     <Button option={1} label="로그인" width={400} />
-    //     <Link path="/register" option={2} label="회원가입" width={400} />
-    //   </fieldset>
-    // </form>
   );
 };

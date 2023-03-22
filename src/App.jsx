@@ -11,13 +11,13 @@ import reset from 'styled-reset';
 function App() {
   return (
     <div>
-      {/* <nav>
+      <nav>
         <Link to="/home ">Home</Link> | <Link to="/login">Login</Link> |{' '}
         <Link to="/sign_up">회원가입</Link> |{' '}
         <Link to="/planet_hospital">식물병원</Link> |{' '}
         <Link to="/planet_market">식물마켓</Link> |{' '}
         <Link to="/cart">장바구니</Link> |{' '}
-      </nav> */}
+      </nav>
       <Routes>
         <Route path="/home" element={<HomePage />}></Route>
         <Route path="/login" element={<LoginPage />}></Route>

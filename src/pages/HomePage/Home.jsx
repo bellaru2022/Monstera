@@ -15,7 +15,7 @@ export const HomePage = () => {
     <section className="home_container">
       <Header />
       <Carousel />
-      <PlantList />
+      <PlantList className="plantList" />
       <Footer />
     </section>
   );

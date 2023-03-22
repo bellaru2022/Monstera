@@ -1,3 +1,9 @@
+.plantList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .cardContainer {
   display: inline-flex;
   flex-direction: row;
@@ -14,8 +20,32 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 120px;
 }
-/* 
-.cardContainer Card {
-  width: 25%;
-} */
+
+.plantCategory {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.plantCategory Button {
+  border: 1px solid #f4f4f4;
+  margin-right: 24px;
+}
+
+.plantTitle {
+  color: red;
+}
+
+.categoryFilter {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.5px;
+  color: #1a1e26;
+  margin-right: 40px;
+}
