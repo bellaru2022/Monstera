@@ -2,11 +2,50 @@ import { Link, Routes, Route } from 'react-router-dom';
 import { HomePage } from './pages/HomePage/Home';
 import { LoginPage } from './pages/LoginPage/Login';
 import React from 'react';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import GlobalStyles from './GlobalStyles';
 
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
+// // firebase
+// import { db } from './firebase-config';
+// import {
+//   collection,
+//   getDocs,
+//   onSnapshot,
+//   getFirestore,
+//   doc,
+//   getDoc,
+// } from 'firebase/firestore';
+
+// import { initializeApp } from 'firebase/app';
+// import 'firebase/compat/firestore';
+// import firebase from 'firebase/compat/app';
+
+// console.log('hidd');
+// const docRef = doc(db, 'items', '1');
+// const docSnap = await getDoc(docRef);
+
+// if (docSnap.exists()) {
+//   console.log('Document data:', docSnap.data());
+// } else {
+//   // doc.data() will be undefined in this case
+//   console.log('No such document!');
+// }
+
+// const itemsCollectionRef = collection(db, 'items');
+
+// getDocs(itemsCollectionRef)
+//   .then((querySnapshot) => {
+//     const items = [];
+//     querySnapshot.forEach((doc) => {
+//       items.push(doc.data());
+//     });
+//     console.log(items);
+//   })
+//   .catch((error) => {
+//     console.log('Error getting documents: ', error);
+//   });
 
 function App() {
   return (
@@ -18,6 +57,7 @@ function App() {
         <Link to="/planet_market">식물마켓</Link> |{' '}
         <Link to="/cart">장바구니</Link> |{' '}
       </nav>
+
       <Routes>
         <Route path="/home" element={<HomePage />}></Route>
         <Route path="/login" element={<LoginPage />}></Route>

@@ -10,10 +10,11 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
  * Primary UI component for user interaction
  */
 
-export const PaginationC = ({ lastPageNum }) => {
+export const PaginationC = ({ lastPageNum, onChange }) => {
   return (
     <Pagination
       count={lastPageNum}
+      onChange={onChange}
       renderItem={(item) => (
         <PaginationItem
           slots={{ previous: ArrowBackIcon, next: ArrowForwardIcon }}

@@ -1,3 +1,28 @@
+.plantList h2 {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 110%;
+  letter-spacing: -4px;
+  padding-top: 94.5px;
+  padding-bottom: 54px;
+
+  color: #3eac62;
+}
+
+.plantCategory h3 {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.5px;
+  padding-right: 40px;
+
+  color: #1a1e26;
+}
+
 .plantList {
   display: flex;
   flex-direction: column;
@@ -27,7 +52,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  width: 1200px;
+  padding-bottom: 37px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f4f4f4;
+  /* justify-content: flex-start; */
 }
 
 .plantCategory Button {
