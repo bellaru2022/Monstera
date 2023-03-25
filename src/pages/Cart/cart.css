@@ -1,0 +1,159 @@
+h2.cart_title {
+  text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-top: 150px;
+  padding-bottom: 60px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 110%;
+  letter-spacing: -4px;
+  color: #3eac62;
+}
+.cart_my_order_title {
+  font-style: medium;
+  font-weight: 400;
+  font-size: 20px;
+}
+.cart_my_order {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #c8c9cb;
+}
+.detail-container {
+  width: 686px;
+  align-items: center;
+  border-bottom: 1px solid #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+.detail-counter {
+  display: flex;
+  flex-direction: row;
+}
+.cart_synopsis {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 417px;
+  padding: 24px;
+  gap: 20px;
+}
+.product_img {
+  width: 45px;
+  height: 40px;
+}
+.cart_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 83px;
+  padding-bottom: 225px;
+}
+.cart_item {
+  display: flex;
+  justify-content: space-between;
+  width: 372px;
+}
+.current-number {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+}
+.counter-btn {
+  display: flex;
+  flex-direction: row;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+}
+.cart_cupon {
+  display: flex;
+  justify-content: space-between;
+  width: 372px;
+  gap: 12px;
+}
+.cupon_button {
+  width: 100px;
+  background-color: #f3fbf4;
+  color: #3eac62;
+  font-size: 14px;
+  padding: 8px 20px;
+}
+.cart_detail {
+  width: 686px;
+}
+.detail-desc {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.delivery_information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.delivery_box {
+  padding-top: 24px;
+  flex-direction: column;
+  display: flex;
+  width: 212.67px;
+}
+.delivery_box > h4 {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #17af26;
+  padding-bottom: 16px;
+}
+.information_box {
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+  border: 1px solid #f4f4f4;
+  border-radius: 12px;
+}
+.information_str {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+.information_dsc {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #717378;
+}
+.price_info {
+  display: flex;
+  height: 60px;
+  border-bottom: 1px solid #c8c9cb;
+  align-items: center;
+  justify-content: space-between;
+  width: 592px;
+  padding-left: 94px;
+}
+.total_Price {
+  font-family: 'Lexend';
+  font-style: bold;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+}
+.total_Price_info {
+  color: #9d9ea2;
+}
