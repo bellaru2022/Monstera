@@ -8,7 +8,8 @@
 
 .storybook-link—secondary {
   display: inline-block;
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Lexend', 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
   font-weight: 700;
   padding: 8.5px 0;
   border-radius: 100px;
@@ -18,4 +19,14 @@
   color: #3eac62;
   background: #fff;
   border: 1px solid #3eac62;
+}
+
+.storybook-link—third {
+  color: #46494f;
+  font-family: 'Lexend', 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
 }
