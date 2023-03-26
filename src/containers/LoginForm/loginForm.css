@@ -2,6 +2,7 @@
   color: #3eac62;
   margin: 0px 7px;
   font-weight: 600;
+  width: 400px;
 }
 
 .fieldset_login_form {
@@ -9,6 +10,8 @@
   flex-direction: column;
   align-items: center;
   border: 0;
+  padding-bottom: 133px;
+  padding-top: 47px;
 }
 
 .fieldset_login_form div:nth-child(2),
