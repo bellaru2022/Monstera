@@ -36,11 +36,16 @@ h2.cart_title {
 }
 .cart_synopsis {
   display: flex;
+  width: 420px;
+  height: 417px;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   height: 417px;
   padding: 24px;
   gap: 20px;
+  border: 1px solid #f4f4f4;
+  border-radius: 16px;
 }
 .product_img {
   width: 45px;
@@ -65,6 +70,7 @@ h2.cart_title {
   justify-content: center;
   align-items: center;
   background: #f4f4f4;
+  border-radius: 4px;
 }
 .counter-btn {
   display: flex;
@@ -73,6 +79,8 @@ h2.cart_title {
   height: 36px;
   align-items: center;
   justify-content: center;
+  background-color: transparent;
+  border: 0;
 }
 .cart_cupon {
   display: flex;
@@ -86,6 +94,8 @@ h2.cart_title {
   color: #3eac62;
   font-size: 14px;
   padding: 8px 20px;
+  border-radius: 100px;
+  border: 0;
 }
 .cart_detail {
   width: 686px;
@@ -113,6 +123,7 @@ h2.cart_title {
   font-size: 16px;
   color: #17af26;
   padding-bottom: 16px;
+  margin: 0;
 }
 .information_box {
   flex-direction: column;
@@ -129,6 +140,7 @@ h2.cart_title {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
+  margin: 0;
 }
 .information_dsc {
   font-family: 'Lexend';
@@ -137,6 +149,7 @@ h2.cart_title {
   font-size: 16px;
   line-height: 150%;
   color: #717378;
+  margin: 0;
 }
 .price_info {
   display: flex;
@@ -144,7 +157,7 @@ h2.cart_title {
   border-bottom: 1px solid #c8c9cb;
   align-items: center;
   justify-content: space-between;
-  width: 592px;
+  width: 686px;
   padding-left: 94px;
 }
 .total_Price {
@@ -156,4 +169,30 @@ h2.cart_title {
 }
 .total_Price_info {
   color: #9d9ea2;
+}
+.bar {
+  border-radius: 100px;
+  background-color: #17af26;
+  width: 372px;
+  height: 6px;
+}
+.buy_info {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0 0;
+  gap: 16px;
+  width: 372px;
+}
+.buy_text_box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.buy_button {
+  background-color: #17af26;
+  border-radius: 100px;
+  color: #ffffff;
+  width: 372px;
+  height: 56px;
+  border: 0;
 }
