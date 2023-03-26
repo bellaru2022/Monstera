@@ -19,7 +19,7 @@ export const LoginForm = ({}) => {
           id="idInput"
           option={true}
           label="아이디"
-          width={372}
+          width={400}
           height={40}
           islabel={false}
         />
@@ -28,7 +28,7 @@ export const LoginForm = ({}) => {
           id="passwordInput"
           label="비밀번호"
           placeholder="비밀번호를 입력하세요"
-          width={372}
+          width={400}
           height={40}
           islabel={false}
         />

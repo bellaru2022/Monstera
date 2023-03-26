@@ -81,8 +81,8 @@ export const RegisterForm = ({}) => {
             <Viewterms label="약관동의" width={100} />
           </li>
         </ul>
-        <Button option={1} label="가입완료" width={280} />
-        <Link path="/register" option={2} label="가입취소" width={280} />
+        <Button option={1} label="가입완료" width={281} />
+        <Link path="/register" option={2} label="가입취소" width={281} />
       </fieldset>
     </form>
   );
