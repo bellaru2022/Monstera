@@ -16,10 +16,12 @@ const InfoBlock = ({ src, title, desc, descType, children }) => {
       <img className="business_icon" src={src} />
       <div>
         <h3>{title}</h3>
-        <div class="desc_container">
-          {['link', 'Link', 'Link'].includes(descType)
-            ? desc.map((d) => <Link label={d} />)
-            : desc.map((d) => <div>{d}</div>)}
+        <div className="desc_container">
+          {!descType
+            ? desc.map((d, index) => <div key={index}>{d}</div>)
+            : descType.toLowerCase() === 'link'
+            ? desc.map((d, index) => <Link key={index}>{d}</Link>)
+            : desc.map((d, index) => <div key={index}>{d}</div>)}
         </div>
 
         <div className="additional_info">{children}</div>
@@ -30,7 +32,7 @@ const InfoBlock = ({ src, title, desc, descType, children }) => {
 export const Footer = () => {
   return (
     <>
-      <div class="info_background">
+      <div className="info_background">
         <InfoBlock
           src={Contact_Icon}
           title="Contact Form"
@@ -50,19 +52,22 @@ export const Footer = () => {
             '팩스 :  070 - 7500 - 6098',
           ]}
         >
-          <a>
+          <a
+            href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0"
+            target={'_blank'}
+          >
             <img className="sns_icon" src={Blog} />
           </a>
-          <a>
+          <a href="https://www.facebook.com/" target={'_blank'}>
             <img className="sns_icon" src={FaceBook} />
           </a>
-          <a>
+          <a href="https://www.instagram.com/" target={'_blank'}>
             <img className="sns_icon" src={Instagram} />
           </a>
-          <a>
+          <a href="https://post.naver.com/navigator.naver" target={'_blank'}>
             <img className="sns_icon" src={NaverPost} />
           </a>
-          <a>
+          <a href="https://www.youtube.com/" target={'_blank'}>
             <img className="sns_icon" src={Youtube} />
           </a>
         </InfoBlock>
@@ -80,7 +85,7 @@ export const Footer = () => {
           // descType="link"
         />
       </div>
-      <div class="right_info">
+      <div className="right_info">
         <p>
           몬스테라에서 판매되는 상품 중에는 마켓컬리에 입점한 개별 판매자가
           몬스테라(오픈마켓) 상품이 포함되어 있습니다. <br />
