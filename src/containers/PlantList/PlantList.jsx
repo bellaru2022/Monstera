@@ -104,7 +104,7 @@ export const PlantList = ({}) => {
     setItems(items.slice(start, end));
   }, [page]);
 
-  console.log(items.map((v) => v.id));
+  // console.log(items.map((v) => v.id));
 
   return (
     <div className="plantList">
