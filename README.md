@@ -181,7 +181,8 @@ URL : 🔗 https://strawberry-market.vercel.app/
 - 전체 개발 기간 : 2023-03-09 ~ 2023-03-29
 ### 작업 관리
 - 🔗[GitHub Projects](https://github.com/orgs/Lab20-Mosobamboo/projects/1)와 🔗[Issues](https://github.com/Lab20-Mosobamboo/Monstera/issues)를 사용하여 진행도와 상황을 꾸준히 공유하였습니다.
-<img src="https://user-images.githubusercontent.com/69141304/153535829-d60fd615-291c-49a2-a52b-86f05893d804.png">
+<img src="https://user-images.githubusercontent.com/108967196/227976589-13d213fd-5f3c-4808-a5a4-e2b76be0f7f7.png">
+
 
 ### 데일리 스크럼
 데일리 스크럼 작성을 통해 그날 작업 방향 및 목표를 설정하였고 이를 GitHub Wiki를 사용하여 기록하였습니다.
@@ -203,7 +204,7 @@ URL : 🔗 https://strawberry-market.vercel.app/
 <p align="right"><a href="#top">(Top)</a></p>
 
 ## <span id="ui">6. UI</span>
-<img src="https://user-images.githubusercontent.com/89337955/153887850-b1199e73-15a8-474a-a7b9-e11155ad7168.jpg">
+<img src="https://user-images.githubusercontent.com/108967196/227981933-4720b4b3-a090-41d5-bd77-32b767ffc247.png">
 
 <p align="right"><a href="#top">(Top)</a></p>
 
@@ -273,23 +274,35 @@ URL : 🔗 https://strawberry-market.vercel.app/
 
 
 
-### 2) createElement vs innerHTML
+### 2) Storybook에서 Link컴포넌트 테스트 할 때 발생하는 에러 메시지
 #### 내용
-- API로 받아오는 데이터에따라 동적으로 HTML을 추가해야하는 상황에서 어디까지 createElement를 사용하고 어디까지 innerHTML을 사용 할 것인가에 대한 고민이 있었습니다.
-- createElement를 사용하는 것이 브라우저 효율쪽이나 여러모로 innerHTML보다 권장되는 방식이지만, 게시글 하나에 들어가는 태그들의 수가 늘어나며 이 모든 것을 createElement로 작성하는 것에 대한 고민이 생겼습니다.
-- 또 innerHTML로 생성한 노드는 querySeletor로 선택하지 못하는 문제도 확인하였습니다.
-#### 결론
-- 예시로 게시글의 경우 하트 버튼에 이벤트 리스너가 추가되어야하는 상황이라 이벤트를 추가해야하는 노드의 경우는 createElement를 사용하여 생성하였습니다.
-- 고정된 HTML구조의 경우는 innerHTML로, 데이터에 따라 값이 바뀌는 경우는 createElement로 생성하는 쪽으로 결정하였습니다.
+- button, input, 등 기본 컴포넌트를 만들고 storybook에서 연동했을시 정상작동하지만 Link 컴포넌트는 에러 경고창이 나왔습니다.
 
-### 3) button vs a
+#### 결론
+- Storybook에서 React Router의 Link 컴포넌트를 사용하려면 storybook-addon-react-router-v6 애드온 설치가 필요합니다.
+- 애드온 설치를 하고 main.js에서 설치한 애드온을 구성하고 .storybook/preview.js 파일에 데코레이더를 구성하고 Link컴포넌트 파일 수정 및 Link 컴포넌트 스토리 파일 작성을 하니 정상작동하는 것을 확인하였습니다.
+
+### 3)  firebase-tools 설치시 터미널 에러
 #### 내용
-- 생긴 모양은 button 태그같지만 페이지 이동인지 동작의 수행인지에 따라 a 태그로 사용해야하는 것에 대한 논의를 하였습니다.
+- firebase를 사용하기위해 터미널에서 npm i firebase 이후 npm install -g firebase-tools 했으나 에러로 인해 설치되지않았습니다.
 #### 결론
-- 각 태그의 의미를 고려하여 페이지 이동의 경우에는 a 태그로, 클래스나 데이터가 변경되는 경우에는 button 태그로 사용하기로 결정하였습니다.
+- root 권한이 필요한 것 같아서 mac 환경의 경우 sudo를 앞에 추가하여 입력했더니 정상적으로 설치된 것을 확인하였습니다. sudo npm install -g firebase-tools  입력후 mac 계정 password 입력 후 에러 해결 완료하였습니다.
 
-### 4) URLSearchParams
-- 게시물마다 지정된 post id를 url에 넘겨줘야 되는 상황이 있었습니다. 해당 데이터를 로컬스토리지에 저장해서 쓰는 거보다 쿼리 스트링으로 쓰는 것이 메모리 효율이나 직관성이 높다는 의견이 나왔습니다. 그래서 URLSearchParams.get 메서드를 사용하기로 했습니다.
+### 4) 스토리북 작동 잘하다가 다시 작동하지 않는 경우
+#### 내용
+- 스토리북 잘 열렸다가 이런 저런 작업을 하다가 다음과 같은 에러메시지가 뜨면서 작동하지 않았습니다. Faild to resolve import "../../assets/monstera_icon.svg"
+#### 결론
+- VSCode 에디터에서 에셋 경로를 입력해보면 assets 폴더가 아니라, assets/images 폴더 안에 모든 이미지가 포함되어 있어서 에셋 경로만 바꿔주니 잘 작동하였습니다.
 
+
+
+### 5)  App.jsx에서 export default 가 중복으로 선언된 경우
+#### 내용
+- GlobalStyles가 App.jsx에 import도 되어있고 동시에 내용에 GlobalStyles로 export하는 코드가 포함되어있습니다.
+src/App.jsx:10:6: ERROR: The symbol "GlobalStyles" has already been declared
+- export default를 통하여 GlobalStyles를 내보내주고 있어서 아래와 같은 오류가 나는 것 같습니다.
+src/App.jsx:51:7: ERROR: Multiple exports with the same name "default"
+#### 결론
+- app.jsx에서 중복선언된 부분은 제거하니 에러메시지가 나오지 않았습니다.
 
 <p align="right"><a href="#top">(Top)</a></p>
