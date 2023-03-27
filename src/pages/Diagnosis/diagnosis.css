@@ -4,6 +4,7 @@ h1 {
 
 .MuiAccordion-root {
   width: 736px;
+ 
 }
 
 .MuiAccordionDetails-root {
@@ -12,10 +13,12 @@ h1 {
 }
 
 .register_containerss {
+  width:736px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 93.5px;
+    /* margin-top: 93.5px; */
+  margin:300.5px auto;
   }
   
 .register_containerss h1 {
