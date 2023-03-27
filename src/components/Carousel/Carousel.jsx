@@ -59,14 +59,14 @@ export const Carousel = ({
 };
 
 Carousel.propTypes = {
-  className: PropTypes.string.isRequired,
-  slidesPerView: PropTypes.number.isRequired,
+  className: PropTypes.string,
+  slidesPerView: PropTypes.number,
   spaceBetween: PropTypes.number,
   pagination: PropTypes.object,
   centeredSlides: PropTypes.bool,
   autoplay: PropTypes.object,
   loop: PropTypes.bool,
-  src: PropTypes.string.isRequired,
+  src: PropTypes.string,
 };
 
 Carousel.defaultProps = {
