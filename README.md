@@ -12,8 +12,9 @@
 - 🙋🏼‍♀️ 이연주 🔗[github/joo1215](https://github.com/joo1215)
 - 🙋🏻‍♀️ 김현진 🔗[github/hyundini](https://github.com/hyundini)
 - 🙋🏻 정보화 🔗[github/bellaru2022](https://github.com/bellaru2022)
-<details>
-<summary>목차</summary>
+
+
+## 목차
 
 1. [프로젝트 목표](#goal)
 2. [개발 환경 및 배포 URL](#dev)
@@ -24,9 +25,10 @@
 7. [페이지 기능](#pages)
 8. [개발하며 겪은 이슈](#issues)
 
-</details>
+
 
 ***
+
 
 ## <span id="goal">1. 프로젝트 목표</span>
 
