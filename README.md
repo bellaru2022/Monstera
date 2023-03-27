@@ -59,7 +59,7 @@
 
 
 
-# <span id="top">:seedling: 딸기마켓</span>
+# <span id="top">:seedling: 몬스테라</span>
 [🔗 배포 URL](https://strawberry-market.vercel.app/)
 ## 개요
 - 🦁 멋쟁이사자처럼 프론트엔드스쿨 4기 팀 프로젝트로 진행한 몬스테라 입니다.
@@ -89,7 +89,10 @@
 
 ***
 
-## <span id="goal">1. 프로젝트 팀 목표</span>
+## <span id="goal">1. 프로젝트 목표</span>
+
+## 🎓 프로젝트 팀 목표
+
 1. 프로젝트 목표 및 계획을 작성하고, 이를 README 파일에 자세하게 기록
 2. Issue 기능을 활용하여 업무를 관리하고, 각 Issue에 대한 상세 설명, 우선순위, 담당자, 데드라인 등을 명확히 기록
 3. Branch를 적극 활용하여 개발 작업을 병렬적으로 진행하고, 개발 완료 후 Pull Request를 통해 코드 리뷰 및 Merge를 진행
@@ -99,7 +102,7 @@
 7. 변경 사항을 정기적으로 체크하고, 필요한 경우 문제점을 해결하고 개선하는 것을 지속적으로 추진
 
 
-## 2. 프로젝트 개인 목표
+## 🧙 프로젝트 개인 목표
 
 ### 박일범
 
@@ -115,10 +118,11 @@
 ### 정보화
 
 - 페이지 전체적인 구성을 논리적으로 짜기
+- 배운 내용 최대한 활용해보기
 
 ### 이연주
 
-- 컴포넌트를 마크 업 신경써서 만들기
+- 컴포넌트를 마크업 신경써서 만들기
 
 ### 김도현
 
@@ -210,7 +214,7 @@ URL : 🔗 https://strawberry-market.vercel.app/
 
 
 ## <span id="role">4. 역할 분담</span>
-- 하단과 같이 각자 페이지를 나누어 진행하였습니다.
+**하단과 같이 각자 페이지를 나누어 진행하였습니다.**
 
 ### 🙋‍♂️ 박일범
   - 🔗[github/parkilbeom](https://github.com/parkilbeom)
@@ -319,9 +323,7 @@ URL : 🔗 https://strawberry-market.vercel.app/
   <details>
   <summary>코드 컨벤션</summary>
 
-  #### 코드 컨벤션
-
-- 🔗[코드 컨벤션](https://github.com/Lab20-Mosobamboo/Monstera/wiki/%EC%BD%94%EB%93%9C-%EC%BB%A8%EB%B2%A4%EC%85%98-(Code-Convention))
+  #### 🔗[코드 컨벤션](https://github.com/Lab20-Mosobamboo/Monstera/wiki/%EC%BD%94%EB%93%9C-%EC%BB%A8%EB%B2%A4%EC%85%98-(Code-Convention))
 
 
   </details>
@@ -330,22 +332,20 @@ URL : 🔗 https://strawberry-market.vercel.app/
   <summary>커밋 컨벤션</summary>
 
   ### 커밋 컨벤션
-  ```
-```merge```  : pull받아서 merge한 경우
-```feat```  :  새로운 기능을 추가할 경우 
-```fix```   : 버그를 고친 경우 
-```design``` :   CSS 등 사용자 UI 디자인 변경 
-```!BREAKING CHANGE``` :    커다란 API 변경의 경우 
-```!HOTFIX``` :   급하게 치명적인 버그를 고쳐야하는 경우 
-```style```  :  코드 포맷 변경, 세미 콜론 누락, 코드 수정이 없는 경우 
-```refactor``` :   프로덕션 코드 리팩토링 
-```comment``` :   필요한 주석 추가 및 변경 
-```docs``` :   문서를 수정한 경우 
-```test``` :   테스트 추가, 테스트 리팩토링 (프로덕션 코드 변경 X) 
-```chore``` :   빌드 테스트 업데이트, 패키지 매니저를 설정하는 경우 (프로덕션 코드 변경 X) 
-```rename``` :   파일 혹은 폴더명을 수정하거나 옮기는 작업만인 경우 
-```remove``` :  파일을 삭제하는 작업만 수행한 경우 
-  ```
+ ```merge```  : pull받아서 merge한 경우 <br/>
+ ```feat```  :  새로운 기능을 추가할 경우 <br/>
+ ```fix```   : 버그를 고친 경우 <br/>
+ ```design``` :   CSS 등 사용자 UI 디자인 변경 <br/>
+ ```!BREAKING CHANGE``` :    커다란 API 변경의 경우 <br/>
+ ```!HOTFIX``` :   급하게 치명적인 버그를 고쳐야하는 경우 <br/>
+ ```style```  :  코드 포맷 변경, 세미 콜론 누락, 코드 수정이 없는 경우 <br/>
+ ```refactor``` :   프로덕션 코드 리팩토링 <br/>
+ ```comment``` :   필요한 주석 추가 및 변경 <br/>
+ ```docs``` :   문서를 수정한 경우 <br/>
+ ```test``` :   테스트 추가, 테스트 리팩토링 (프로덕션 코드 변경 X) <br/> 
+ ```chore``` :   빌드 테스트 업데이트, 패키지 매니저를 설정하는 경우 (프로덕션 코드 변경 X) <br/>
+ ```rename``` :   파일 혹은 폴더명을 수정하거나 옮기는 작업만인 경우 <br/>
+ ```remove``` :  파일을 삭제하는 작업만 수행한 경우 <br/>
 
   </details>
 
