@@ -7,6 +7,16 @@ import { Button } from '../Button/Button';
 import { Title } from '../Title/Title';
 
 export const Card = (props) => {
+  const currentPrice = props.currentPrice;
+  const replacePrice = currentPrice
+    .toString()
+    .replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+  const prevPrice = props.prevPrice;
+  const replacePrevPrice = prevPrice
+    .toString()
+    .replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
   return (
     <div
       className="card__container"
@@ -15,6 +25,7 @@ export const Card = (props) => {
         height: props.containerHeight,
         gap: props.componentGap,
       }}
+      key={props.id}
     >
       <img
         className="product__image"
@@ -37,8 +48,10 @@ export const Card = (props) => {
         </div>
         <span className="newItem">{props.newItem}</span>
         <div className="price">
-          <span className="prevPrice">{props.prevPrice}원 / </span>
-          <span className="currentPrice">{props.currentPrice}원</span>
+          <span className="prevPrice">
+            <del>{replacePrevPrice}원</del> /
+          </span>
+          <span className="currentPrice"> {replacePrice}원</span>
         </div>
         <Button option={1} label={'장바구니 담기'} width={130}></Button>
       </div>
@@ -47,20 +60,20 @@ export const Card = (props) => {
 };
 
 Card.propTypes = {
-  containerWidth: PropTypes.string.isRequired,
-  containerHeight: PropTypes.string.isRequired,
-  componentGap: PropTypes.string.isRequired,
-  src: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
-  imageWidth: PropTypes.string.isRequired,
-  imageHeight: PropTypes.string.isRequired,
-  contentWidth: PropTypes.string.isRequired,
-  contentHeight: PropTypes.string.isRequired,
-  categoryTitle: PropTypes.string.isRequired,
-  productTitle: PropTypes.string.isRequired,
-  score: PropTypes.number.isRequired,
-  reviewsNumber: PropTypes.number.isRequired,
-  newItem: PropTypes.string.isRequired,
-  prevPrice: PropTypes.number.isRequired,
-  currentPrice: PropTypes.number.isRequired,
+  containerWidth: PropTypes.string,
+  containerHeight: PropTypes.string,
+  componentGap: PropTypes.string,
+  src: PropTypes.string,
+  alt: PropTypes.string,
+  imageWidth: PropTypes.string,
+  imageHeight: PropTypes.string,
+  contentWidth: PropTypes.string,
+  contentHeight: PropTypes.string,
+  categoryTitle: PropTypes.string,
+  productTitle: PropTypes.string,
+  score: PropTypes.number,
+  reviewsNumber: PropTypes.number,
+  newItem: PropTypes.string,
+  prevPrice: PropTypes.number,
+  currentPrice: PropTypes.number,
 };
