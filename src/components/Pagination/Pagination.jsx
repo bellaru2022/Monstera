@@ -15,6 +15,8 @@ export const PaginationC = ({ lastPageNum, onChange }) => {
     <Pagination
       count={lastPageNum}
       onChange={onChange}
+      defaultPage={1}
+      boundaryCount={2}
       renderItem={(item) => (
         <PaginationItem
           slots={{ previous: ArrowBackIcon, next: ArrowForwardIcon }}

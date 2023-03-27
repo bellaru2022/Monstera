@@ -116,8 +116,6 @@ export const PlantList = ({}) => {
         <div className="page">
           <PaginationC
             lastPageNum={LAST_PAGE}
-            defaultPage={1}
-            boundaryCount={2}
             onChange={(e) => handlePage(e)}
           />
         </div>
