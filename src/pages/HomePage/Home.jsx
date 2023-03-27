@@ -13,10 +13,8 @@ import { Input } from '../../components/Input/Input';
 export const HomePage = () => {
   return (
     <section className="home_container">
-      <Header />
       <Carousel />
       <PlantList className="plantList" />
-      <Footer />
     </section>
   );
 };
