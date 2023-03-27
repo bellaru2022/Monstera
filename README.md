@@ -1,64 +1,3 @@
-# Monstera
-
-전문가가 검수해주는 식물 거래 & 케어 플랫폼
-
-## 기술 스택
-
-1. React
-2. Recoil
-3. CSS MODULES
-4. Storybook
-5. git
-6. React Router
-
-## 프로젝트 팀 목표
-
-1. 프로젝트 목표 및 계획을 작성하고, 이를 README 파일에 자세하게 기록
-2. Issue 기능을 활용하여 업무를 관리하고, 각 Issue에 대한 상세 설명, 우선순위, 담당자, 데드라인 등을 명확히 기록
-3. Branch를 적극 활용하여 개발 작업을 병렬적으로 진행하고, 개발 완료 후 Pull Request를 통해 코드 리뷰 및 Merge를 진행
-4. 코드 컨벤션을 정의하고, 모든 참여자가 동일한 스타일로 코드를 작성
-5. Commit 메시지는 언제 어떤 변경 사항이 있었는지 쉽게 파악할 수 있도록 명확하고 간결하게 작성
-6. 코드 리뷰를 통해 서로 코드를 검토하고, 피드백을 제공하며 코드 품질을 향상
-7. 변경 사항을 정기적으로 체크하고, 필요한 경우 문제점을 해결하고 개선하는 것을 지속적으로 추진
-
-## 프로젝트 개인 목표
-
-### 박일범
-
-- 팀원들과 협업스킬 향상
-- React 작업 최대한 많이 해보기
-- StoryBook, Recoil 익숙해지기
-
-### 김현진
-
-- 리액트 상태 관리에 대해서 정확히 이해하고, 상태관리 툴을 익숙하게 다루기
-- 컴포넌트 재활용성을 극대화하기
-
-### 정보화
-
-- 페이지 전체적인 구성을 논리적으로 짜기
-
-### 이연주
-
-- 컴포넌트를 마크 업 신경써서 만들기
-
-### 김도현
-
-- 논리적으로 구분되고 일관성 있게 커밋 기록 남기기
-
-
-
-<!-- 복붙한 내용 -->
-
-
-
-
-
-
-
-
-
-
 # <span id="top">:seedling: 몬스테라</span>
 [🔗 배포 URL](https://strawberry-market.vercel.app/)
 ## 개요
@@ -138,6 +77,7 @@
 - Recoil
 - CSS MODULES
 - Storybook
+- Firebase
 - git
 - React Router
 - 버전 관리 및 이슈 : 🔗[GitHub](https://github.com/Lab20-Mosobamboo/Monstera), 🔗[GitHub Issues](https://github.com/Lab20-Mosobamboo/Monstera/issues), 🔗[GitHub Project](https://github.com/orgs/Lab20-Mosobamboo/projects/1)
@@ -216,21 +156,21 @@ URL : 🔗 https://strawberry-market.vercel.app/
 ## <span id="role">4. 역할 분담</span>
 **하단과 같이 각자 페이지를 나누어 진행하였습니다.**
 
-### 🙋‍♂️ 박일범
+### 🙋‍♂️ 박일범 (리더)
   - 🔗[github/parkilbeom](https://github.com/parkilbeom)
-  - 디자인, 헤더&푸터, 장바구니 페이지
+  - 홈페이지 전체 디자인, 헤더&푸터, 장바구니 페이지, 전체적인 프로젝트 관리 및 환경설정
 ### 🙋 김도현
   - 🔗[github/kimzeze](https://github.com/kimzeze)
-  - 메인 페이지
+  - 메인 페이지, 컴포넌트 & 스토리북 관리, 파이어베이스 관리
 ### 🙋🏼‍♀️ 이연주
   - 🔗[github/joo1215](https://github.com/joo1215)
-  - 상품 상세 페이지
+  - 상품 상세 페이지, 백로그 및 팀 프로젝트 스케줄 관리
 ### 🙋🏻‍♀️ 김현진
   - 🔗[github/hyundini](https://github.com/hyundini)
-  - 로그인, 회원가입 페이지
+  - 로그인, 회원가입 페이지, 파이어베이스 관리
 ### 🙋🏻 정보화
   - 🔗[github/bellaru2022](https://github.com/bellaru2022)
-  - 식물 진단 페이지
+  - 식물 진단 페이지, wiki 및 스크럼 관리
 
 <p align="right"><a href="#top">(Top)</a></p>
 
@@ -320,34 +260,15 @@ URL : 🔗 https://strawberry-market.vercel.app/
 #### 결론
 - 저희만의 코드 컨벤션, 커밋 컨벤션을 만들었습니다.
 
-  <details>
-  <summary>코드 컨벤션</summary>
-
-  #### 🔗[코드 컨벤션](https://github.com/Lab20-Mosobamboo/Monstera/wiki/%EC%BD%94%EB%93%9C-%EC%BB%A8%EB%B2%A4%EC%85%98-(Code-Convention))
 
 
-  </details>
+  ▶ 🔗[코드 컨벤션](https://github.com/Lab20-Mosobamboo/Monstera/wiki/%EC%BD%94%EB%93%9C-%EC%BB%A8%EB%B2%A4%EC%85%98-(Code-Convention))
 
-  <details>
-  <summary>커밋 컨벤션</summary>
 
-  ### 커밋 컨벤션
- ```merge```  : pull받아서 merge한 경우 <br/>
- ```feat```  :  새로운 기능을 추가할 경우 <br/>
- ```fix```   : 버그를 고친 경우 <br/>
- ```design``` :   CSS 등 사용자 UI 디자인 변경 <br/>
- ```!BREAKING CHANGE``` :    커다란 API 변경의 경우 <br/>
- ```!HOTFIX``` :   급하게 치명적인 버그를 고쳐야하는 경우 <br/>
- ```style```  :  코드 포맷 변경, 세미 콜론 누락, 코드 수정이 없는 경우 <br/>
- ```refactor``` :   프로덕션 코드 리팩토링 <br/>
- ```comment``` :   필요한 주석 추가 및 변경 <br/>
- ```docs``` :   문서를 수정한 경우 <br/>
- ```test``` :   테스트 추가, 테스트 리팩토링 (프로덕션 코드 변경 X) <br/> 
- ```chore``` :   빌드 테스트 업데이트, 패키지 매니저를 설정하는 경우 (프로덕션 코드 변경 X) <br/>
- ```rename``` :   파일 혹은 폴더명을 수정하거나 옮기는 작업만인 경우 <br/>
- ```remove``` :  파일을 삭제하는 작업만 수행한 경우 <br/>
+  ▶ 🔗[커밋 컨벤션](https://github.com/Lab20-Mosobamboo/Monstera/wiki/%EC%BB%A4%EB%B0%8B-%EC%BB%A8%EB%B2%A4%EC%85%98-(Commit-Convention))
+  
+ 
 
-  </details>
 
 
 ### 2) createElement vs innerHTML
