@@ -1,12 +1,11 @@
-import { ProductDetail } from './Table';
+import { TableC } from './Table';
 
 export default {
   title: 'Example/Table',
-  component: ProductDetail,
+  component: TableC,
   tags: ['autodocs'],
 };
 
 export const Detail = {
   args: {},
-  ariaLabel: '상품 정보',
 };

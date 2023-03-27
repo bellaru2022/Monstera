@@ -21,7 +21,7 @@ export const Header = () => {
               <Logo alt="monstera" />
             </a>
           </h1>
-          <div class="search_bar">
+          <div className="search_bar">
             <Input
               type="search"
               id="searchInput"
@@ -35,15 +35,15 @@ export const Header = () => {
               <img src={Search_Button} alt="검색버튼" />
             </button>
           </div>
-          <div class="menu_bar">
-            <Link label="로그인" />
-            <span class="gap">|</span>
-            <Link label="회원가입" />
-            <span class="gap">|</span>
-            <Link label="식물병원" />
-            <span class="gap">|</span>
-            <a class="cart_icon" href="">
-              <img src={cart_icon} alt="장바구니" />
+          <div className="menu_bar">
+            <Link label="로그인" path="/login" option={3} />
+            <span className="gap">|</span>
+            <Link label="회원가입" path="/register" option={3} />
+            <span className="gap">|</span>
+            <Link label="식물병원" path="/diagnosis" option={3} />
+            <span className="gap">|</span>
+            <a label="none" target="_parent" href="/cart">
+              <img src={cart_icon} className="cart_icon" alt="장바구니" />
             </a>
           </div>
         </div>
