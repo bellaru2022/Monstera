@@ -82,8 +82,8 @@ Carousel.defaultProps = {
     clickable: true,
   },
   loop: true,
-  src_1: 'src/assets/images/swiper01.png',
-  src_2: 'src/assets/images/swiper02.png',
-  src_3: 'src/assets/images/swiper03.png',
-  src_4: 'src/assets/images/swiper04.png',
+  src_1: 'https://lab20-mosobamboo.github.io/src/assets/images/swiper01.png',
+  src_2: 'https://lab20-mosobamboo.github.io/src/assets/images/swiper02.png',
+  src_3: 'https://lab20-mosobamboo.github.io/src/assets/images/swiper03.png',
+  src_4: 'https://lab20-mosobamboo.github.io/src/assets/images/swiper04.png',
 };

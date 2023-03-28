@@ -1,5 +1,6 @@
 import React from 'react';
 import { useRecoilState, useRecoilValue } from 'recoil';
+import { Link as ReactRouterLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './card.css';
 import './reset.css';
@@ -29,13 +30,15 @@ export const Card = (props) => {
       }}
       key={props.id}
     >
-      <img
-        className="product__image"
-        src={props.src}
-        alt={props.alt}
-        width={props.imageWidth}
-        height={props.imageHeight}
-      />
+      <ReactRouterLink to={'/productdetail'}>
+        <img
+          className="product__image"
+          src={props.src}
+          alt={props.alt}
+          width={props.imageWidth}
+          height={props.imageHeight}
+        />
+      </ReactRouterLink>
       <div
         className="content"
         style={{ width: props.contentWidth, height: props.contentHeight }}

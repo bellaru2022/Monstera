@@ -6,10 +6,10 @@ import './productGuide.css';
 
 export const ProductGuide = () => {
   return (
-    <section className="guide_container">
+    <div className="guide_container">
       <ProductInfo />
       <InspectionGuide />
       <PurchaseGuide />
-    </section>
+    </div>
   );
 };

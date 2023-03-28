@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import { Header } from './containers/Header/Header';
 import { Footer } from './containers/Footer/Footer';
 import { Diagnosis } from './pages/Diagnosis/Diagnosis';
+import { ProductDetail } from './pages/ProductDetail/ProductDetail';
 import { Cart } from './pages/Cart/Cart';
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
@@ -21,6 +22,7 @@ function App() {
         <Route path="/login" element={<LoginPage />}></Route>
         <Route path="/register" element={<RegisterPage />}></Route>
         <Route path="/diagnosis" element={<Diagnosis />}></Route>
+        <Route path="/productdetail" element={<ProductDetail />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
       </Routes>
       <Footer />
