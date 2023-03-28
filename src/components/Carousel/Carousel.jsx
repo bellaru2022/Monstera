@@ -16,7 +16,10 @@ export const Carousel = ({
   autoplay,
   pagination,
   loop,
-  src,
+  src_1,
+  src_2,
+  src_3,
+  src_4,
   alt,
   context,
 }) => {
@@ -32,26 +35,23 @@ export const Carousel = ({
         loop={loop}
         modules={[Autoplay, Pagination, Navigation]}
         navigation
+        speed={1000}
       >
         <SwiperSlide>
           {context}
-          <img src={src} alt={alt} />
+          <img src={src_1} alt={alt} />
         </SwiperSlide>
         <SwiperSlide>
           {context}
-          <img src={src} alt={alt} />
+          <img src={src_2} alt={alt} />
         </SwiperSlide>
         <SwiperSlide>
           {context}
-          <img src={src} alt={alt} />
+          <img src={src_3} alt={alt} />
         </SwiperSlide>
         <SwiperSlide>
           {context}
-          <img src={src} alt={alt} />
-        </SwiperSlide>
-        <SwiperSlide>
-          {context}
-          <img src={src} alt={alt} />
+          <img src={src_4} alt={alt} />
         </SwiperSlide>
       </Swiper>
     </>
@@ -59,12 +59,31 @@ export const Carousel = ({
 };
 
 Carousel.propTypes = {
-  className: PropTypes.string.isRequired,
-  slidesPerView: PropTypes.number.isRequired,
+  className: PropTypes.string,
+  slidesPerView: PropTypes.number,
   spaceBetween: PropTypes.number,
   pagination: PropTypes.object,
   centeredSlides: PropTypes.bool,
   autoplay: PropTypes.object,
   loop: PropTypes.bool,
-  src: PropTypes.string.isRequired,
+  src: PropTypes.string,
+};
+
+Carousel.defaultProps = {
+  className: 'mainSwiper',
+  slidesPerView: 1,
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    clickable: true,
+  },
+  loop: true,
+  src_1: 'https://lab20-mosobamboo.github.io/src/assets/images/swiper01.png',
+  src_2: 'https://lab20-mosobamboo.github.io/src/assets/images/swiper02.png',
+  src_3: 'https://lab20-mosobamboo.github.io/src/assets/images/swiper03.png',
+  src_4: 'https://lab20-mosobamboo.github.io/src/assets/images/swiper04.png',
 };

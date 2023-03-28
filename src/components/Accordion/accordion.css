@@ -1,59 +1,60 @@
 .MuiAccordion-root {
-    outline: 1px solid #3EAC62;
+  outline: 1px solid #3eac62;
 }
 
 .MuiAccordionSummary-content div {
-    display:flex;
-    align-items: center;
-    font-family: 'Lexend';
-    color: #3EAC62;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 110%;
-    letter-spacing: -1px;
+  display: flex;
+  align-items: center;
+  font-family: 'Lexend';
+  color: #3eac62;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -1px;
 }
 
 .Mui-expanded + .Mui-expanded {
-    min-height: unset;
+  min-height: unset;
 }
 
 .MuiAccordionSummary-root {
-    border-width: 1px 0px !important; 
-    border-style: solid !important;
-    border-color: #3EAC62 !important;
-    height: 60px;
+  border-width: 1px 0px !important;
+  border-style: solid !important;
+  border-color: #3eac62 !important;
+  height: 60px;
+  width: 736px;
 }
 
 .MuiAccordionSummary-content img {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .MuiAccordionDetails-root {
-    background-color: #EAF8ED;
+  background-color: #eaf8ed;
 }
 
 .accordion--detail--content--wrapper:not(:first-of-type) {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .MuiAccordionDetails-root .accordion--detail--title {
-    font-family: 'Lexend';
-    font-weight: 600;
-    line-height: 110%;
-    letter-spacing: -1px;
-    color: #3EAC62;
-    font-size: 20px;
-    margin: 16px 18px;
+  font-family: 'Lexend';
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -1px;
+  color: #3eac62;
+  font-size: 20px;
+  margin: 16px 18px;
 }
 
 .MuiAccordionDetails-root .accordion--detail--desc {
-    font-family: 'Lexend';
-    font-weight: 600;
-    line-height: 110%;
-    letter-spacing: -1px;
-    color: #333333;
-    font-size: 16px;
-    margin: 16px 18px;
+  font-family: 'Lexend';
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -1px;
+  color: #333333;
+  font-size: 16px;
+  margin: 16px 18px;
 }
 
 /* d */

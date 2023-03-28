@@ -1,7 +1,7 @@
-import { initializeApp } from "firebase/app";
-import "firebase/compat/firestore";
-import firebase from "firebase/compat/app";
-import { getFirestore } from "@firebase/firestore";
+import { initializeApp } from 'firebase/app';
+import 'firebase/compat/firestore';
+import firebase from 'firebase/compat/app';
+import { getFirestore } from '@firebase/firestore';
 
 const {
   VITE_FIREBASE_API_KEY,
@@ -23,7 +23,6 @@ const firebaseConfig = {
   measurementId: VITE_FIREBASE_MEASUREMENT_ID,
 };
 
-//console.log(firebaseConfig);
 const app = firebase.initializeApp(firebaseConfig);
 
 const firestore = firebase.firestore();

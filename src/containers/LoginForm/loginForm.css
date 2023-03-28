@@ -2,6 +2,7 @@
   color: #3eac62;
   margin: 0px 7px;
   font-weight: 600;
+  width: 400px;
 }
 
 .fieldset_login_form {
@@ -9,15 +10,25 @@
   flex-direction: column;
   align-items: center;
   border: 0;
+  padding-bottom: 133px;
+  padding-top: 47px;
 }
 
 .fieldset_login_form div:nth-child(2),
 .fieldset_login_form div:nth-child(3),
-.fieldset_login_form .storybook-button—primary,
 .fieldset_login_form .link_container {
   margin-bottom: 17px;
 }
 
+.fieldset_login_form .storybook-button—primary {
+  padding: 11.5px 0;
+  height: initial;
+}
+.fieldset_login_form .storybook-link—secondary {
+  margin-top: 17px;
+  height: initial;
+  padding: 12px 0;
+}
 .fieldset_login_form div:nth-child(2),
 .fieldset_login_form div:nth-child(3) {
   width: 400px;
