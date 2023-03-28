@@ -6,6 +6,7 @@ import { Link } from '../../components/Link/Link';
 import { Button } from '../../components/Button/Button';
 import Search_Button from '../../assets/images/Search_Button.svg';
 import cart_icon from '../../assets/images/cart_icon.svg';
+import { Link as ReactRouterLink } from 'react-router-dom';
 import './header.css';
 
 export const Header = () => {
@@ -17,9 +18,7 @@ export const Header = () => {
       <div className="search_form_background">
         <div className="search_form">
           <h1 className="Logo">
-            <a href="/">
-              <Logo alt="monstera" />
-            </a>
+            <Logo alt="monstera" />
           </h1>
           <div className="search_bar">
             <Input
@@ -42,9 +41,9 @@ export const Header = () => {
             <span className="gap">|</span>
             <Link label="식물병원" path="/diagnosis" option={3} />
             <span className="gap">|</span>
-            <a label="none" target="_parent" href="/cart">
+            <ReactRouterLink to={'/cart'}>
               <img src={cart_icon} className="cart_icon" alt="장바구니" />
-            </a>
+            </ReactRouterLink>
           </div>
         </div>
       </div>
