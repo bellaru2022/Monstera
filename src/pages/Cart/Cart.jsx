@@ -13,14 +13,27 @@ import cart_Icon01 from '../../assets/images/cart_Icon01.svg';
 import cart_Icon02 from '../../assets/images/cart_Icon02.svg';
 import cart_Icon03 from '../../assets/images/cart_Icon03.svg';
 import card_img from '../../assets/images/card_img.png';
+import { cartState } from '../../store/atom';
+import { useRecoilState } from 'recoil';
 import './cart.css';
 
+const numberSpliter = (n) => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
 const Desc = () => {
+  const [cartInfo, setCartInfo] = useRecoilState(cartState);
   return (
     <div className="cart_synopsis">
       <div className="cart_item">
         <div>총 금액</div>
-        <div>101,500원</div>
+        <div>
+          {' '}
+          {numberSpliter(
+            Object.values(cartInfo).reduce(
+              (acc, cur) => acc + cur.stock * cur.replacePrice,
+              0,
+            ),
+          )}
+        </div>
       </div>
       <div className="cart_item">
         <div>할인</div>
@@ -55,8 +68,9 @@ const Desc = () => {
     </div>
   );
 };
+
 const Detail = ({ n, productPrice, productName }) => {
-  const [counter, setCounter] = useState(n);
+  const [cartInfo, setCartInfo] = useRecoilState(cartState);
   return (
     <div className="detail-container">
       <div className="detail-desc">
@@ -67,50 +81,51 @@ const Detail = ({ n, productPrice, productName }) => {
       <div className="detail-counter">
         <button
           className="counter-btn"
-          onClick={() =>
-            setCounter((counter) => (counter > 0 ? counter - 1 : 0))
-          }
+          onClick={() => {
+            if (n < 2) {
+              const copiedInfo = { ...cartInfo };
+              delete copiedInfo[productName];
+              setCartInfo({ ...copiedInfo });
+            } else
+              setCartInfo({
+                ...cartInfo,
+                [productName]: {
+                  productTitle: productName,
+                  stock: n - 1,
+                  replacePrice: productPrice,
+                },
+              });
+          }}
         >
           -
         </button>
-        <span className="current-number">{counter}</span>
+        <span className="current-number">{n}</span>
 
         <button
           className="counter-btn"
-          onClick={() => setCounter((counter) => counter + 1)}
+          onClick={() =>
+            setCartInfo({
+              ...cartInfo,
+              [productName]: {
+                productTitle: productName,
+                stock: n + 1,
+                replacePrice: productPrice,
+              },
+            })
+          }
         >
           +
         </button>
       </div>
-      <span>{productPrice}원</span>
-      <span>{counter * productPrice}원</span>
+      <span>{numberSpliter(productPrice)}원</span>
+      <span>{numberSpliter(n * productPrice)}원</span>
     </div>
   );
 };
 
 export const Cart = () => {
-  const cartStorage =
-    localStorage.getItem('cart') ??
-    localStorage.setItem(
-      'cart',
-      JSON.stringify([
-        {
-          productName: '몬스테라',
-          n: 1,
-          productPrice: 15000,
-        },
-        {
-          productName: '테이블야자',
-          n: 1,
-          productPrice: 25000,
-        },
-      ]),
-    );
-  const data = JSON.parse(cartStorage);
-  const [totalPrice, setTotalPrice] = useState(
-    data.reduce((acc, cur) => acc + cur.n * cur.productPrice, 0),
-  );
-  console.log(data[0]);
+  const [cartInfo, setCartInfo] = useRecoilState(cartState);
+
   return (
     <div>
       <h2 className="cart_title">식집사의 장바구니</h2>
@@ -118,21 +133,40 @@ export const Cart = () => {
         <div className="cart_detail">
           <div className="cart_my_order">
             <h3 className="cart_my_order_title">나의 주문</h3>
-            <span>{`(1)`}</span>
+            <span>
+              {'(' +
+                Object.values(cartInfo).reduce(
+                  (acc, cur) => acc + cur.stock,
+                  0,
+                ) +
+                ')'}
+            </span>
           </div>
-          {data.map(({ productName, productPrice, n }, index) => (
-            <Detail
-              productName={productName}
-              productPrice={productPrice}
-              n={n}
-              key={index}
-            />
-          ))}
+          {Object.values(cartInfo).map(
+            ({ productTitle, replacePrice, src, stock }, index) => (
+              <Detail
+                productName={productTitle}
+                productPrice={replacePrice}
+                n={stock}
+                src={src}
+                key={index}
+              />
+            ),
+          )}
           <div className="price_info">
             <span className="total_Price_info">
               상품금액 + 검수비 + 수수료 + 배송비
             </span>
-            <span className="total_Price">총 {totalPrice}원</span>
+            <span className="total_Price">
+              총
+              {numberSpliter(
+                Object.values(cartInfo).reduce(
+                  (acc, cur) => acc + cur.stock * cur.replacePrice,
+                  3500,
+                ),
+              )}
+              원
+            </span>
           </div>
           <section className="delivery_information">
             <div className="delivery_box">

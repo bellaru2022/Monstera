@@ -1,12 +1,15 @@
 import React from 'react';
+import { useRecoilState, useRecoilValue } from 'recoil';
 import PropTypes from 'prop-types';
 import './card.css';
 import './reset.css';
 
 import { Button } from '../Button/Button';
 import { Title } from '../Title/Title';
-
+import { cartState } from '../../store/atom';
 export const Card = (props) => {
+  const [cartInfo, setCartInfo] = useRecoilState(cartState);
+
   const currentPrice = props.currentPrice;
   const replacePrice = currentPrice
     .toString()
@@ -16,7 +19,6 @@ export const Card = (props) => {
   const replacePrevPrice = prevPrice
     .toString()
     .replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-
   return (
     <div
       className="card__container"
@@ -56,8 +58,18 @@ export const Card = (props) => {
         <Button
           option={1}
           label={'장바구니 담기'}
-          width={130}
-          onClick={() => console.log(1)}
+          width={137}
+          onClick={() =>
+            setCartInfo({
+              ...cartInfo,
+              [props.productTitle]: {
+                productTitle: props.productTitle,
+                replacePrice: currentPrice,
+                src: props.src,
+                stock: 1,
+              },
+            })
+          }
         ></Button>
       </div>
     </div>

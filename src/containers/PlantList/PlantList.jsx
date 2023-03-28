@@ -73,10 +73,10 @@ export const PlantList = ({}) => {
           type={3}
           label="카테고리 필터"
         ></Title>
-        <Button option={1} label="관역식물" width={100}></Button>
+        <Button option={1} label="관역식물" width={110}></Button>
         <Button option={2} label="허브류" width={90}></Button>
-        <Button option={2} label="공기정화식물" width={120}></Button>
-        <Button option={2} label="다육식물" width={100}></Button>
+        <Button option={2} label="공기정화식물" width={130}></Button>
+        <Button option={2} label="다육식물" width={110}></Button>
         <Button option={2} label="야생화" width={90}></Button>
         <Button option={2} label="기타" width={80}></Button>
       </div>
