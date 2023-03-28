@@ -85,7 +85,7 @@
 - 버전 관리 및 이슈 : 🔗[GitHub](https://github.com/Lab20-Mosobamboo/Monstera), 🔗[GitHub Issues](https://github.com/Lab20-Mosobamboo/Monstera/issues), 🔗[GitHub Project](https://github.com/orgs/Lab20-Mosobamboo/projects/1)
 - 서비스 배포 환경 : [🔗 Vercel](https://vercel.com/)
 ### 배포 URL
-URL : 🔗 https://strawberry-market.vercel.app/
+URL : 🔗 https://lab20-mosobamboo.github.io/my_monstera/
 
 <p align="right"><a href="#top">(Top)</a></p>
 
