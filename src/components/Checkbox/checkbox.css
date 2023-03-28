@@ -20,7 +20,8 @@
 }
 
 input[type='checkbox']:checked {
-  border-color: black;
+  border-color: rgba(62, 172, 98, 1);
+  background-color: rgba(62, 172, 98, 1);
   border-width: 2px;
 }
 
@@ -29,10 +30,10 @@ input[type='checkbox']:checked {
   position: relative;
   left: 10px;
   top: -6px;
-  color: rgba(196, 196, 196, 1);
+  color: rgba(62, 172, 98, 1) !important;
   font-size: 14px;
 }
 
 .isActive {
-  color: black;
+  color: rgba(255, 255, 255, 1);
 }
