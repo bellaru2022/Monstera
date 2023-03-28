@@ -95,61 +95,159 @@ URL : 🔗 https://strawberry-market.vercel.app/
 - containers/ : container를 모아둔 디렉토리
 - pages/ : components와 containers에서 만든 것을 page로 합친 디렉토리
 
-```bash
-│  README.md
-│  index.html
-├── assets
-├── css
-│    ├── default.css
-│    ├── font.css
-│    ├── reset.css
-│    ├── style.css
-│    ├── style_HJ.css
-│    ├── style_JA.css
-│    ├── style_NR.css
-│    └── style_YE.css
-├── font
-├── html
-├── js
-│    ├── accountedit.js
-│    ├── chat.js
-│    ├── chatroom.js
-│    ├── edit.js
-│    ├── followers.js
-│    ├── followfeed.js
-│    ├── followings.js
-│    ├── index.js
-│    ├── intro.js
-│    ├── join.js
-│    ├── login.js
-│    ├── mypostedit.js
-│    ├── myprofile.js
-│    ├── post.js
-│    ├── postdetail.js
-│    ├── product.js
-│    ├── profile.js
-│    ├── script.js
-│    ├── search.js
-│    └── useredit.js
-└── pages
-     ├── accountedit.html
-     ├── chat.html
-     ├── chatroom.html
-     ├── edit.html
-     ├── followers.html
-     ├── followfeed.html
-     ├── followings.html
-     ├── home.html
-     ├── intro.html
-     ├── join.html
-     ├── login.html
-     ├── mypostedit.html
-     ├── myprofile.html
-     ├── post.html
-     ├── postdetail.html
-     ├── product.html
-     ├── profile.html
-     └── search.html
+```
+.storybook
+📦.storybook
+ ┣ 📜main.js
+ ┣ 📜preview-head.html
+ ┗ 📜preview.js
+ 📦public
+ ┗ 📜vite.svg
+📦src
+ ┣ 📂assets
+ ┃ ┗ 📂images
+ ┃ ┃ ┣ 📂vuesax
+ ┃ ┃ ┃ ┗ 📂linear
+ ┃ ┃ ┃ ┃ ┗ 📂vuesax
+ ┃ ┃ ┃ ┃ ┃ ┗ 📂linear
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜Vector.svg
+ ┃ ┃ ┣ 📜Blog.svg
+ ┃ ┃ ┣ 📜Bussiness_Icon.svg
+ ┃ ┃ ┣ 📜card_best.png
+ ┃ ┃ ┣ 📜card_image.png
+ ┃ ┃ ┣ 📜card_img.png
+ ┃ ┃ ┣ 📜card_sale.png
+ ┃ ┃ ┣ 📜card_soldout.png
+ ┃ ┃ ┣ 📜cart_icon.svg
+ ┃ ┃ ┣ 📜cart_Icon01.svg
+ ┃ ┃ ┣ 📜cart_Icon02.svg
+ ┃ ┃ ┣ 📜cart_Icon03.svg
+ ┃ ┃ ┣ 📜check.svg
+ ┃ ┃ ┣ 📜Contact_Icon.svg
+ ┃ ┃ ┣ 📜detail_img.png
+ ┃ ┃ ┣ 📜down_arrow.svg
+ ┃ ┃ ┣ 📜FaceBook.png
+ ┃ ┃ ┣ 📜Instagram.png
+ ┃ ┃ ┣ 📜LOGO.svg
+ ┃ ┃ ┣ 📜monstera_icon.svg
+ ┃ ┃ ┣ 📜NaverPost.png
+ ┃ ┃ ┣ 📜Search_Button.svg
+ ┃ ┃ ┣ 📜Sitemap_Icon.svg
+ ┃ ┃ ┣ 📜star.svg
+ ┃ ┃ ┣ 📜swiper01.png
+ ┃ ┃ ┣ 📜swiper02.png
+ ┃ ┃ ┣ 📜swiper03.png
+ ┃ ┃ ┣ 📜swiper04.png
+ ┃ ┃ ┣ 📜swiper_arrow.svg
+ ┃ ┃ ┣ 📜top_arrow.svg
+ ┃ ┃ ┣ 📜uncheck.svg
+ ┃ ┃ ┗ 📜Youtube.png
+ ┣ 📂components
+ ┃ ┣ 📂Accordion
+ ┃ ┃ ┣ 📜accordion.css
+ ┃ ┃ ┣ 📜Accordion.jsx
+ ┃ ┃ ┗ 📜Accordion.stories.jsx
+ ┃ ┣ 📂Button
+ ┃ ┃ ┣ 📜button.css
+ ┃ ┃ ┣ 📜Button.jsx
+ ┃ ┃ ┗ 📜Button.stories.js
+ ┃ ┣ 📂Card
+ ┃ ┃ ┣ 📜card.css
+ ┃ ┃ ┣ 📜Card.jsx
+ ┃ ┃ ┣ 📜Card.stories.js
+ ┃ ┃ ┗ 📜reset.css
+ ┃ ┣ 📂Carousel
+ ┃ ┃ ┣ 📜carousel.css
+ ┃ ┃ ┣ 📜Carousel.jsx
+ ┃ ┃ ┗ 📜Carousel.stories.js
+ ┃ ┣ 📂Checkbox
+ ┃ ┃ ┣ 📜checkbox.css
+ ┃ ┃ ┣ 📜Checkbox.jsx
+ ┃ ┃ ┗ 📜Checkbox.stories.js
+ ┃ ┣ 📂ImageC
+ ┃ ┃ ┣ 📜image.css
+ ┃ ┃ ┣ 📜Image.jsx
+ ┃ ┃ ┗ 📜Image.stories.js
+ ┃ ┣ 📂Input
+ ┃ ┃ ┣ 📜input.css
+ ┃ ┃ ┣ 📜Input.jsx
+ ┃ ┃ ┗ 📜Input.stories.js
+ ┃ ┣ 📂Link
+ ┃ ┃ ┣ 📜link.css
+ ┃ ┃ ┣ 📜Link.jsx
+ ┃ ┃ ┗ 📜Link.stories.js
+ ┃ ┣ 📂Logo
+ ┃ ┃ ┣ 📜logo.css
+ ┃ ┃ ┣ 📜Logo.jsx
+ ┃ ┃ ┗ 📜Logo.stories.js
+ ┃ ┣ 📂Pagination
+ ┃ ┃ ┣ 📜pagination.css
+ ┃ ┃ ┣ 📜Pagination.jsx
+ ┃ ┃ ┗ 📜Pagination.stories.js
+ ┃ ┣ 📂Table
+ ┃ ┃ ┣ 📜table.css
+ ┃ ┃ ┣ 📜Table.jsx
+ ┃ ┃ ┗ 📜Table.stories.js
+ ┃ ┣ 📂Title
+ ┃ ┃ ┣ 📜title.css
+ ┃ ┃ ┣ 📜Title.jsx
+ ┃ ┃ ┗ 📜Title.stories.js
+ ┃ ┗ 📂Viewterms
+ ┃ ┃ ┣ 📜viewterms.css
+ ┃ ┃ ┣ 📜Viewterms.jsx
+ ┃ ┃ ┗ 📜Viewterms.stories.js
+ ┣ 📂containers
+ ┃ ┣ 📂DiagnosisForm
+ ┃ ┃ ┣ 📜diagnosisForm.css
+ ┃ ┃ ┣ 📜DiagnosisForm.jsx
+ ┃ ┃ ┗ 📜DiagnosisForm.stories.jsx
+ ┃ ┣ 📂Footer
+ ┃ ┃ ┣ 📜footer.css
+ ┃ ┃ ┣ 📜Footer.jsx
+ ┃ ┃ ┗ 📜Footer.stories.js
+ ┃ ┣ 📂Header
+ ┃ ┃ ┣ 📜header.css
+ ┃ ┃ ┣ 📜Header.jsx
+ ┃ ┃ ┗ 📜Header.stories.js
+ ┃ ┣ 📂InspectionGuide
+ ┃ ┃ ┣ 📜inspectionGuide.css
+ ┃ ┃ ┣ 📜InspectionGuide.jsx
+ ┃ ┃ ┗ 📜InspectionGuide.stories.js
+ ┃ ┣ 📂LoginForm
+ ┃ ┃ ┣ 📜loginForm.css
+ ┃ ┃ ┣ 📜LoginForm.jsx
+ ┃ ┃ ┗ 📜LoginForm.stories.js
+ ┃ ┣ 📂PurchaseGuide
+ ┃ ┃ ┣ 📜purchaseGuide.css
+ ┃ ┃ ┣ 📜PurchaseGuide.jsx
+ ┃ ┃ ┗ 📜PurchaseGuide.stories.js
+ ┃ ┗ 📂RegisterForm
+ ┃ ┃ ┣ 📜registerForm.css
+ ┃ ┃ ┣ 📜RegisterForm.jsx
+ ┃ ┃ ┗ 📜RegisterForm.stories.js
+ ┣ 📂pages
+ ┃ ┣ 📂Cart
+ ┃ ┃ ┣ 📜cart.css
+ ┃ ┃ ┣ 📜Cart.jsx
+ ┃ ┃ ┗ 📜Cart.stories.js
+ ┃ ┣ 📂Diagnosis
+ ┃ ┃ ┣ 📜diagnosis.css
+ ┃ ┃ ┣ 📜Diagnosis.jsx
+ ┃ ┃ ┗ 📜Diagnosis.stories.jsx
+ ┃ ┣ 📂LoginPage
+ ┃ ┃ ┣ 📜Login.css
+ ┃ ┃ ┣ 📜Login.jsx
+ ┃ ┃ ┗ 📜Login.stories.js
+ ┃ ┗ 📂RegisterPage
+ ┃ ┃ ┣ 📜register.css
+ ┃ ┃ ┣ 📜Register.jsx
+ ┃ ┃ ┗ 📜Register.stories.js
+ ┣ 📜App.jsx
+ ┣ 📜firebase-config.js
+ ┣ 📜GlobalStyles.jsx
+ ┣ 📜index.css
+ ┗ 📜main.jsx
+
 ```
 
 <p align="right"><a href="#top">(Top)</a></p>
@@ -208,18 +306,49 @@ URL : 🔗 https://strawberry-market.vercel.app/
 
 <p align="right"><a href="#top">(Top)</a></p>
 
-## <span id="pages">7. 페이지 소개</span>
+## <span id="pages">7. 페이지 기능</span>
 
-
-
-
-### Monstera
-|🧑‍🏫 main page|👨‍🌾 login page|👩‍✈️ register page|
+### 1) 메인 
+|🔗[splash](https://github.com/nurimeansworld/strawberry_market/wiki/페이지-기능-상세-설명#-splash)|🔗[로그인 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/페이지-기능-상세-설명#-로그인-페이지)|🔗[회원가입 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/페이지-기능-상세-설명#-회원가입-페이지)|
 |:-:|:-:|:-:|
-|<img width="390px;" src="https://user-images.githubusercontent.com/108967196/228148066-4cfffdb1-8cde-4fd2-b60a-a4ba3aa3872e.gif"> |<img width="390px;" src="https://user-images.githubusercontent.com/108967196/228148278-f4bc203a-5188-46dd-9385-a2c1b3947308.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/108967196/228148571-e4aa541a-5bb6-4bb6-8799-42ce6aff7e59.gif">|
-|**👨‍🏭 product detail**|**🕵️‍♀️ plant diagnostic page**|**💂‍♂️ cart**|
-|<img width="390px;" src="https://user-images.githubusercontent.com/108967196/228149695-057b87c9-c26e-4a6a-9da6-00fe098f575f.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/108967196/228152328-cfd0edfe-40d2-4b33-a090-0c4e06a3d5e7.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/108967196/228152426-1c32f3f9-0aec-4e2e-b1d0-4a1adf5d8363.gif">|
+|<img width="390px;" src="https://user-images.githubusercontent.com/86909942/153747664-ff315846-7e38-4079-8eae-429167206a54.gif"> |<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154147004-5ca2bffd-9221-422c-beaf-9d6d96433e58.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154147035-9b44eb92-f879-4601-8200-5fe0f153d0e3.gif">|
+|🔗[홈 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%ED%99%88-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[검색 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EA%B2%80%EC%83%89-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[채팅 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EA%B2%80%EC%83%89-%ED%8E%98%EC%9D%B4%EC%A7%80)|
+|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154808243-27f7d259-a6f8-4854-9988-42c8cf9e679c.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154147058-8d375716-8163-49bf-b1a2-54e549a99581.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/86909942/153747299-3ad2f035-811c-4d6c-8729-44eec3a28af7.gif">|
 
+## 2) 로그인
+|🔗[게시글 작성 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EA%B2%8C%EC%8B%9C%EA%B8%80-%EC%9E%91%EC%84%B1-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[게시물 상세 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EA%B2%8C%EC%8B%9C%EB%AC%BC-%EC%83%81%EC%84%B8-%ED%8E%98%EC%9D%B4%EC%A7%80)|
+|:-:|:-:|
+|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154149525-4f2279be-dc6e-4051-bcf8-1e4f44b5a2b7.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154147122-b190781a-020e-48fa-b745-076958aaa0b8.gif">|
+|🔗[게시글 수정 or 신고 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EA%B2%8C%EC%8B%9C%EA%B8%80-%EC%88%98%EC%A0%95-or-%EC%8B%A0%EA%B3%A0-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%8C%93%EA%B8%80-%EC%88%98%EC%A0%95-or-%EC%8B%A0%EA%B3%A0-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[댓글 삭제 or 신고 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EA%B2%8C%EC%8B%9C%EA%B8%80-%EC%88%98%EC%A0%95-or-%EC%8B%A0%EA%B3%A0-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%8C%93%EA%B8%80-%EC%88%98%EC%A0%95-or-%EC%8B%A0%EA%B3%A0-%ED%8E%98%EC%9D%B4%EC%A7%80)|
+|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/155879884-90eb92dc-a53e-4f4b-98aa-de655f5e4b8e.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154809365-fd7feb77-780f-4009-81ed-2b8d1b011b5e.gif">|
+
+## 3) 회원가입
+|🔗[마이 프로필 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EB%A7%88%EC%9D%B4-%ED%94%84%EB%A1%9C%ED%95%84-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[유저 프로필 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EC%9C%A0%EC%A0%80-%ED%94%84%EB%A1%9C%ED%95%84-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[팔로워 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%ED%8C%94%EB%A1%9C%EC%9B%8C-%ED%8E%98%EC%9D%B4%EC%A7%80-%ED%8C%94%EB%A1%9C%EC%9E%89-%ED%8E%98%EC%9D%B4%EC%A7%80)
+|:-:|:-:|:-:|
+|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/155853160-889c8826-455a-43ce-90ad-6ffdb0c10a72.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/155852974-ee932d5d-d1f0-44d8-87f9-0263f1622685.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/155879188-637fb973-e9d7-405e-846c-1cca544eeba1.gif">
+|🔗[팔로잉 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%ED%8C%94%EB%A1%9C%EC%9B%8C-%ED%8E%98%EC%9D%B4%EC%A7%80-%ED%8C%94%EB%A1%9C%EC%9E%89-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[로그아웃 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EB%A1%9C%EA%B7%B8%EC%95%84%EC%9B%83-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[프로필 수정 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%ED%94%84%EB%A1%9C%ED%95%84-%EC%88%98%EC%A0%95-%ED%8E%98%EC%9D%B4%EC%A7%80)
+|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/155879191-6d45f339-75f3-4353-a3e4-7a864ca3341c.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154150447-2feca0af-dcf5-4101-8d6c-f4f0c81cc575.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154147590-6343cb56-5a60-4a15-bf94-e6805d7e8bb3.gif">|
+
+## 4) 상품 상세
+|🔗[상품 등록 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EC%83%81%ED%92%88-%EB%93%B1%EB%A1%9D-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[상품 수정 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EC%83%81%ED%92%88-%EC%88%98%EC%A0%95-%ED%8E%98%EC%9D%B4%EC%A7%80)|
+|:-:|:-:|
+|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154147633-4842d449-544d-4268-b3ef-361a031bb964.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154154506-7f492ae0-31cd-4da3-bf11-43a3b1608306.gif">|
+|🔗[상품 삭제 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EC%83%81%ED%92%88-%EC%82%AD%EC%A0%9C-%EC%9D%B4%EB%8F%99-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[상품 사이트로 이동 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EC%83%81%ED%92%88-%EC%82%AD%EC%A0%9C-%EC%9D%B4%EB%8F%99-%ED%8E%98%EC%9D%B4%EC%A7%80)|
+|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154155295-5c75bcb8-82cd-4b9b-930d-fb380e5b8218.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/155849036-8466debe-7267-454b-8f4b-4f74b1eac7be.gif">|
+
+## 5) 식물진단 가이드
+|🔗[상품 등록 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EC%83%81%ED%92%88-%EB%93%B1%EB%A1%9D-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[상품 수정 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EC%83%81%ED%92%88-%EC%88%98%EC%A0%95-%ED%8E%98%EC%9D%B4%EC%A7%80)|
+|:-:|:-:|
+|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154147633-4842d449-544d-4268-b3ef-361a031bb964.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154154506-7f492ae0-31cd-4da3-bf11-43a3b1608306.gif">|
+|🔗[상품 삭제 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EC%83%81%ED%92%88-%EC%82%AD%EC%A0%9C-%EC%9D%B4%EB%8F%99-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[상품 사이트로 이동 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EC%83%81%ED%92%88-%EC%82%AD%EC%A0%9C-%EC%9D%B4%EB%8F%99-%ED%8E%98%EC%9D%B4%EC%A7%80)|
+|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154155295-5c75bcb8-82cd-4b9b-930d-fb380e5b8218.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/155849036-8466debe-7267-454b-8f4b-4f74b1eac7be.gif">|
+
+## 6) 장바구니
+|🔗[상품 등록 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EC%83%81%ED%92%88-%EB%93%B1%EB%A1%9D-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[상품 수정 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EC%83%81%ED%92%88-%EC%88%98%EC%A0%95-%ED%8E%98%EC%9D%B4%EC%A7%80)|
+|:-:|:-:|
+|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154147633-4842d449-544d-4268-b3ef-361a031bb964.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154154506-7f492ae0-31cd-4da3-bf11-43a3b1608306.gif">|
+|🔗[상품 삭제 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EC%83%81%ED%92%88-%EC%82%AD%EC%A0%9C-%EC%9D%B4%EB%8F%99-%ED%8E%98%EC%9D%B4%EC%A7%80)|🔗[상품 사이트로 이동 페이지](https://github.com/nurimeansworld/strawberry_market/wiki/%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%84%B8-%EC%84%A4%EB%AA%85#-%EC%83%81%ED%92%88-%EC%82%AD%EC%A0%9C-%EC%9D%B4%EB%8F%99-%ED%8E%98%EC%9D%B4%EC%A7%80)|
+|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/154155295-5c75bcb8-82cd-4b9b-930d-fb380e5b8218.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/89337955/155849036-8466debe-7267-454b-8f4b-4f74b1eac7be.gif">|
 
 <p align="right"><a href="#top">(Top)</a></p>
 
@@ -275,3 +404,7 @@ src/App.jsx:51:7: ERROR: Multiple exports with the same name "default"
 - app.jsx에서 중복선언된 부분은 제거하니 에러메시지가 나오지 않았습니다.
 
 <p align="right"><a href="#top">(Top)</a></p>
+
+
+
+
