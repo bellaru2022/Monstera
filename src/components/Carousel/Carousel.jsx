@@ -82,8 +82,12 @@ Carousel.defaultProps = {
     clickable: true,
   },
   loop: true,
-  src_1: 'https://lab20-mosobamboo.github.io/src/assets/images/swiper01.png',
-  src_2: 'https://lab20-mosobamboo.github.io/src/assets/images/swiper02.png',
-  src_3: 'https://lab20-mosobamboo.github.io/src/assets/images/swiper03.png',
-  src_4: 'https://lab20-mosobamboo.github.io/src/assets/images/swiper04.png',
+  src_1:
+    'https://firebasestorage.googleapis.com/v0/b/monstera-ad980.appspot.com/o/swiper01.png?alt=media&token=bc510ab7-abf4-4064-999f-5cafd5291abd',
+  src_2:
+    'https://firebasestorage.googleapis.com/v0/b/monstera-ad980.appspot.com/o/swiper02.png?alt=media&token=4d70d85b-3473-4011-ba70-a5d89dd556c8',
+  src_3:
+    'https://firebasestorage.googleapis.com/v0/b/monstera-ad980.appspot.com/o/swiper03.png?alt=media&token=2dcb32d9-85f8-4c92-ad53-a3535d2b59e9',
+  src_4:
+    'https://firebasestorage.googleapis.com/v0/b/monstera-ad980.appspot.com/o/swiper04.png?alt=media&token=4c252469-27ac-461c-9487-37cea81ba1ea',
 };
