@@ -5,12 +5,12 @@ import { ProductGuide } from '../../containers/ProductGuide/ProductGuide';
 
 export const ProductDetail = () => {
   return (
-    <section className="detail_container">
+    <div className="detail_container">
       <PriceInfo />
       <ProductGuide />
       {/* <ProductInfo />
       <InspectionGuide />
       <PurchaseGuide /> */}
-    </section>
+    </div>
   );
 };

@@ -1,7 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset'; // style-reset 패키지
 
-const GlobalStyles = createGlobalStyle` 
+const GlobalStyles = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800&display=swap');
     ${reset}
     .a11y-hidden,
         legend {

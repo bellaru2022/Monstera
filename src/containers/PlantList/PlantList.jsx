@@ -28,27 +28,6 @@ export const PlantList = ({}) => {
   const itemsCollectionRef = collection(db, 'items');
   const [items, setItems] = useState([]);
 
-  // const handlePage = (event) => {
-  //   const nowPageInt = parseInt(event.target.outerText);
-  //   setPage(nowPageInt);
-  // };
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const querySnapshot = await getDocs(itemsCollectionRef);
-  //       const itemsData = querySnapshot.docs.map((doc) => ({
-  //         ...doc.data(),
-  //         id: doc.id,
-  //       }));
-  //       setItems(itemsData);
-  //     } catch (error) {
-  //       console.log('Error getting documents: ', error);
-  //     }
-  //   };
-  //   fetchData();
-  // }, []);
-
   const fetchData = async () => {
     try {
       const querySnapshot = await getDocs(itemsCollectionRef);
@@ -65,27 +44,6 @@ export const PlantList = ({}) => {
   useEffect(() => {
     fetchData();
   }, []);
-
-  // const LAST_PAGE =
-  //   items.length % 8 === 0
-  //     ? parseInt(items.length / 8)
-  //     : parseInt(items.length / 8) + 1; // 마지막 페이지
-  // const [page, setPage] = useState(1); // 처음 페이지는 1이다.
-  // // const [items, setItems] = useState(/* 처음 페이지의 데이터들 */);
-
-  // useEffect(() => {
-  //   // setItems(/* fetch(또는 전체 데이터에서 slice)로 현재 page의 데이터를 가져온다. */);
-  //   // 한 페이지에 8개씩 보여준다.
-  //   if (page === LAST_PAGE) {
-  //     // 마지막 페이지는 데이터가 8개보다 부족할 수도 있다.
-  //     setItems(items.slice(8 * (page - 1)));
-  //   } else if (page === 1) {
-  //     // 첫 페이지는 8개만 보여준다.
-  //     setItems(items.slice(0, 8));
-  //   } else {
-  //     setItems(items.slice(8 * (page - 1), 8 * (page - 1) + 8));
-  //   }
-  // }, [page]);
 
   const LAST_PAGE =
     items.length % 8 === 0
@@ -104,8 +62,6 @@ export const PlantList = ({}) => {
     setItems(items.slice(start, end));
   }, [page]);
 
-  // console.log(items.map((v) => v.id));
-
   return (
     <div className="plantList">
       {/* 제목 */}
@@ -117,10 +73,10 @@ export const PlantList = ({}) => {
           type={3}
           label="카테고리 필터"
         ></Title>
-        <Button option={1} label="관역식물" width={100}></Button>
+        <Button option={1} label="관역식물" width={110}></Button>
         <Button option={2} label="허브류" width={90}></Button>
-        <Button option={2} label="공기정화식물" width={120}></Button>
-        <Button option={2} label="다육식물" width={100}></Button>
+        <Button option={2} label="공기정화식물" width={130}></Button>
+        <Button option={2} label="다육식물" width={110}></Button>
         <Button option={2} label="야생화" width={90}></Button>
         <Button option={2} label="기타" width={80}></Button>
       </div>

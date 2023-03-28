@@ -1,12 +1,16 @@
 import React from 'react';
+import { useRecoilState, useRecoilValue } from 'recoil';
+import { Link as ReactRouterLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './card.css';
 import './reset.css';
 
 import { Button } from '../Button/Button';
 import { Title } from '../Title/Title';
-
+import { cartState } from '../../store/atom';
 export const Card = (props) => {
+  const [cartInfo, setCartInfo] = useRecoilState(cartState);
+
   const currentPrice = props.currentPrice;
   const replacePrice = currentPrice
     .toString()
@@ -16,7 +20,6 @@ export const Card = (props) => {
   const replacePrevPrice = prevPrice
     .toString()
     .replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-
   return (
     <div
       className="card__container"
@@ -27,13 +30,15 @@ export const Card = (props) => {
       }}
       key={props.id}
     >
-      <img
-        className="product__image"
-        src={props.src}
-        alt={props.alt}
-        width={props.imageWidth}
-        height={props.imageHeight}
-      />
+      <ReactRouterLink to={'/productdetail'}>
+        <img
+          className="product__image"
+          src={props.src}
+          alt={props.alt}
+          width={props.imageWidth}
+          height={props.imageHeight}
+        />
+      </ReactRouterLink>
       <div
         className="content"
         style={{ width: props.contentWidth, height: props.contentHeight }}
@@ -53,7 +58,22 @@ export const Card = (props) => {
           </span>
           <span className="currentPrice"> {replacePrice}원</span>
         </div>
-        <Button option={1} label={'장바구니 담기'} width={130}></Button>
+        <Button
+          option={1}
+          label={'장바구니 담기'}
+          width={137}
+          onClick={() =>
+            setCartInfo({
+              ...cartInfo,
+              [props.productTitle]: {
+                productTitle: props.productTitle,
+                replacePrice: currentPrice,
+                src: props.src,
+                stock: 1,
+              },
+            })
+          }
+        ></Button>
       </div>
     </div>
   );
