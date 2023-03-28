@@ -23,16 +23,6 @@ const firebaseConfig = {
   measurementId: VITE_FIREBASE_MEASUREMENT_ID,
 };
 
-// const firebaseConfig = {
-//   apiKey: 'AIzaSyAC8hWd3U77OPAJLMvzK-EftUJKj_J7l98',
-//   authDomain: 'monstera-ad980.firebaseapp.com',
-//   projectId: 'monstera-ad980',
-//   storageBucket: 'monstera-ad980.appspot.com',
-//   messagingSenderId: '280388407086',
-//   appId: '1:280388407086:web:fe12edb774e31e6fc274bf',
-//   measurementId: 'G-MJ29RQ4MTK',
-// };
-
 const app = firebase.initializeApp(firebaseConfig);
 
 const firestore = firebase.firestore();
