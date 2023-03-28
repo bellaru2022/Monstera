@@ -53,7 +53,12 @@ export const Card = (props) => {
           </span>
           <span className="currentPrice"> {replacePrice}원</span>
         </div>
-        <Button option={1} label={'장바구니 담기'} width={130}></Button>
+        <Button
+          option={1}
+          label={'장바구니 담기'}
+          width={130}
+          onClick={() => console.log(1)}
+        ></Button>
       </div>
     </div>
   );

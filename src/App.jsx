@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Link, Routes, Route } from 'react-router-dom';
 import { HomePage } from './pages/HomePage/Home';
 import { LoginPage } from './pages/LoginPage/Login';
@@ -16,7 +17,7 @@ function App() {
     <div>
       <Header />
       <Routes>
-        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/my_monstera" element={<HomePage />}></Route>
         <Route path="/login" element={<LoginPage />}></Route>
         <Route path="/register" element={<RegisterPage />}></Route>
         <Route path="/diagnosis" element={<Diagnosis />}></Route>

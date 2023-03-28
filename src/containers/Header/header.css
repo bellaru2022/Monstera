@@ -16,6 +16,7 @@
 }
 .search_form_background {
   background-color: white;
+  border-bottom: 1px solid #f4f4f4;
 }
 .search_form {
   max-width: 1200px;
@@ -49,9 +50,12 @@
 .menu_bar {
   font-family: 'Lexend';
   color: black;
+  align-items: center;
+  display: inline-block;
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
 }
 .cart_icon {
-  /* display: flex; */
-  /* align-items: center;
-  justify-content: center; */
+  display: inline;
 }
