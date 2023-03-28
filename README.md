@@ -1,5 +1,5 @@
 # <span id="top">:seedling: 몬스테라</span>
-[🔗 배포 URL](https://strawberry-market.vercel.app/)
+[🔗 배포 URL](https://lab20-mosobamboo.github.io/my_monstera/)
 ## 개요
 - 🦁 멋쟁이사자처럼 프론트엔드스쿨 4기 팀 프로젝트로 진행한 몬스테라 입니다.
 - :seedling: 몬스테라 서비스는 전문가가 검수해주는 식물 거래 & 케어 플랫폼 입니다.
