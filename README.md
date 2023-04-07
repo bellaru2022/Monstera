@@ -83,9 +83,9 @@
 - git
 - React Router
 - 버전 관리 및 이슈 : 🔗[GitHub](https://github.com/Lab20-Mosobamboo/Monstera), 🔗[GitHub Issues](https://github.com/Lab20-Mosobamboo/Monstera/issues), 🔗[GitHub Project](https://github.com/orgs/Lab20-Mosobamboo/projects/1)
-- 서비스 배포 환경 : [🔗 Vercel](https://vercel.com/)
+- 서비스 배포 환경 : [🔗 GitHub](https://github.com/)
 ### 배포 URL
-URL : 🔗 https://strawberry-market.vercel.app/
+URL : 🔗 https://lab20-mosobamboo.github.io/my_monstera
 
 <p align="right"><a href="#top">(Top)</a></p>
 
@@ -100,18 +100,18 @@ URL : 🔗 https://strawberry-market.vercel.app/
  ┣ 📜main.js
  ┣ 📜preview-head.html
  ┗ 📜preview.js
- 📦public
- ┗ 📜vite.svg
+📦.storybook
+ ┣ 📜main.js
+ ┣ 📜preview-head.html
+ ┗ 📜preview.js
 📦src
  ┣ 📂assets
  ┃ ┗ 📂images
- ┃ ┃ ┣ 📂vuesax
- ┃ ┃ ┃ ┗ 📂linear
- ┃ ┃ ┃ ┃ ┗ 📂vuesax
- ┃ ┃ ┃ ┃ ┃ ┗ 📂linear
- ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜Vector.svg
  ┃ ┃ ┣ 📜Blog.svg
  ┃ ┃ ┣ 📜Bussiness_Icon.svg
+ ┃ ┃ ┣ 📜card02_img.png
+ ┃ ┃ ┣ 📜card03_img.png
+ ┃ ┃ ┣ 📜card04_img.png
  ┃ ┃ ┣ 📜card_best.png
  ┃ ┃ ┣ 📜card_image.png
  ┃ ┃ ┣ 📜card_img.png
@@ -140,6 +140,7 @@ URL : 🔗 https://strawberry-market.vercel.app/
  ┃ ┃ ┣ 📜swiper_arrow.svg
  ┃ ┃ ┣ 📜top_arrow.svg
  ┃ ┃ ┣ 📜uncheck.svg
+ ┃ ┃ ┣ 📜Vector.svg
  ┃ ┃ ┗ 📜Youtube.png
  ┣ 📂components
  ┃ ┣ 📂Accordion
@@ -216,6 +217,22 @@ URL : 🔗 https://strawberry-market.vercel.app/
  ┃ ┃ ┣ 📜loginForm.css
  ┃ ┃ ┣ 📜LoginForm.jsx
  ┃ ┃ ┗ 📜LoginForm.stories.js
+ ┃ ┣ 📂PlantList
+ ┃ ┃ ┣ 📜plantList.css
+ ┃ ┃ ┣ 📜PlantList.jsx
+ ┃ ┃ ┗ 📜PlantList.stories.js
+ ┃ ┣ 📂PriceInfo
+ ┃ ┃ ┣ 📜priceInfo.css
+ ┃ ┃ ┣ 📜PriceInfo.jsx
+ ┃ ┃ ┗ 📜PriceInfo.stories.js
+ ┃ ┣ 📂ProductGuide
+ ┃ ┃ ┣ 📜productGuide.css
+ ┃ ┃ ┣ 📜ProductGuide.jsx
+ ┃ ┃ ┗ 📜ProductGuide.stories.js
+ ┃ ┣ 📂ProductInfo
+ ┃ ┃ ┣ 📜productInfo.css
+ ┃ ┃ ┣ 📜ProductInfo.jsx
+ ┃ ┃ ┗ 📜ProductInfo.stories.js
  ┃ ┣ 📂PurchaseGuide
  ┃ ┃ ┣ 📜purchaseGuide.css
  ┃ ┃ ┣ 📜PurchaseGuide.jsx
@@ -233,14 +250,24 @@ URL : 🔗 https://strawberry-market.vercel.app/
  ┃ ┃ ┣ 📜diagnosis.css
  ┃ ┃ ┣ 📜Diagnosis.jsx
  ┃ ┃ ┗ 📜Diagnosis.stories.jsx
+ ┃ ┣ 📂HomePage
+ ┃ ┃ ┣ 📜home.css
+ ┃ ┃ ┣ 📜Home.jsx
+ ┃ ┃ ┗ 📜Home.stories.js
  ┃ ┣ 📂LoginPage
  ┃ ┃ ┣ 📜Login.css
  ┃ ┃ ┣ 📜Login.jsx
  ┃ ┃ ┗ 📜Login.stories.js
+ ┃ ┣ 📂ProductDetail
+ ┃ ┃ ┣ 📜productDetail.css
+ ┃ ┃ ┣ 📜ProductDetail.jsx
+ ┃ ┃ ┗ 📜ProductDetail.stories.js
  ┃ ┗ 📂RegisterPage
  ┃ ┃ ┣ 📜register.css
  ┃ ┃ ┣ 📜Register.jsx
  ┃ ┃ ┗ 📜Register.stories.js
+ ┣ 📂store
+ ┃ ┗ 📜atom.js
  ┣ 📜App.jsx
  ┣ 📜firebase-config.js
  ┣ 📜GlobalStyles.jsx
@@ -256,19 +283,19 @@ URL : 🔗 https://strawberry-market.vercel.app/
 
 ### 🙋‍♂️ 박일범 (리더)
   - 🔗[github/parkilbeom](https://github.com/parkilbeom)
-  - 홈페이지 전체 디자인, 헤더&푸터, 장바구니 페이지, 전체적인 프로젝트 관리 및 환경설정
+  - 홈페이지 전체 디자인, 헤더&푸터, 장바구니 페이지, 전체적인 프로젝트 관리 및 환경설정, 깃허브 레포지토리 관리
 ### 🙋 김도현
   - 🔗[github/kimzeze](https://github.com/kimzeze)
-  - 메인 페이지, 컴포넌트 & 스토리북 관리, 파이어베이스 관리
+  - 메인 페이지, 컴포넌트 오류 체크, 스토리북&파이어베이스 관리
 ### 🙋🏼‍♀️ 이연주
   - 🔗[github/joo1215](https://github.com/joo1215)
-  - 상품 상세 페이지, 백로그 및 팀 프로젝트 스케줄 관리
+  - 상품 상세 페이지, 백로그 관리, 기술개발 진행사항 관리 및 기록
 ### 🙋🏻‍♀️ 김현진
   - 🔗[github/hyundini](https://github.com/hyundini)
-  - 로그인, 회원가입 페이지, 파이어베이스 관리
+  - 로그인, 회원가입 페이지, 파이어베이스 DB관리
 ### 🙋🏻 정보화
   - 🔗[github/bellaru2022](https://github.com/bellaru2022)
-  - 식물 진단 페이지, wiki 및 스크럼 관리
+  - 식물 진단 페이지, wiki 및 스크럼 관리, README & PPT, 회의록 관리
 
 <p align="right"><a href="#top">(Top)</a></p>
 
@@ -309,12 +336,32 @@ URL : 🔗 https://strawberry-market.vercel.app/
 
 
 
-### Monstera
-|🧑‍🏫 main page|👨‍🌾 login page|👩‍✈️ register page|
-|:-:|:-:|:-:|
-|<img width="390px;" src="https://user-images.githubusercontent.com/108967196/228148066-4cfffdb1-8cde-4fd2-b60a-a4ba3aa3872e.gif"> |<img width="390px;" src="https://user-images.githubusercontent.com/108967196/228148278-f4bc203a-5188-46dd-9385-a2c1b3947308.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/108967196/228148571-e4aa541a-5bb6-4bb6-8799-42ce6aff7e59.gif">|
-|**👨‍🏭 product detail**|**🕵️‍♀️ plant diagnostic page**|**💂‍♂️ cart**|
-|<img width="390px;" src="https://user-images.githubusercontent.com/108967196/228149695-057b87c9-c26e-4a6a-9da6-00fe098f575f.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/108967196/228152328-cfd0edfe-40d2-4b33-a090-0c4e06a3d5e7.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/108967196/228152426-1c32f3f9-0aec-4e2e-b1d0-4a1adf5d8363.gif">|
+### 🧑‍🏫 main page
+|**header**|**footer**|
+|:-:|:-:|
+|<img width="390px;" src="https://user-images.githubusercontent.com/108967196/228389864-63bba9b5-45fd-4cab-b58b-b532bc1c9ab2.gif"> |<img width="390px;" src="https://user-images.githubusercontent.com/108967196/228389977-9b682d59-6da8-4846-acf6-189771ae924c.gif">|
+|**carousel**|**card**|
+|<img width="390px;" src="https://user-images.githubusercontent.com/108967196/228390342-284de8b2-2b4c-4e76-a60d-8f4b4cc4547a.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/108967196/228390482-98113f20-5b9b-46cc-b3f6-e1f3180faa39.gif">|
+
+
+
+### 👨‍🌾 login & register page 
+|**login page**|**register page**|
+|:-:|:-:|
+|<img width="390px;" src="https://user-images.githubusercontent.com/108967196/228391662-2f0cd919-3cc5-4bdb-8c30-7977146674e4.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/108967196/228391719-30459a01-1117-4341-9cde-1666c27753b9.gif">|
+
+
+### 🏭 product detail & plant diagnostic page
+|**product detail page**|**plant diagnostic page**|
+|:-:|:-:|
+|<img width="390px;" src="https://user-images.githubusercontent.com/108967196/228392553-199438d3-7976-428f-babf-cc4de866e238.gif">|<img width="390px;" src="https://user-images.githubusercontent.com/108967196/228392524-da665ff9-f3fb-4748-b5d5-6b10e01dc895.gif">|
+
+
+### 💂‍♂️ cart page
+|**cart page**|
+|:-:|
+|<img width="390px;" src="https://user-images.githubusercontent.com/108967196/228393062-b756966c-1a6c-4d07-ab94-fd119bf4122a.gif">|
+
 
 
 <p align="right"><a href="#top">(Top)</a></p>
@@ -371,6 +418,16 @@ src/App.jsx:51:7: ERROR: Multiple exports with the same name "default"
 - app.jsx에서 중복선언된 부분은 제거하니 에러메시지가 나오지 않았습니다.
 
 <p align="right"><a href="#top">(Top)</a></p>
+
+
+
+
+
+
+
+
+
+
 
 ```
 Monstera
